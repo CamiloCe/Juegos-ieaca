@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Triqui</title>
+    <link href="triqui.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="Imagenes/cerebro.jpg" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+        <nav >
+            <ul class="menu-horizontal">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="banderas.html">Banderas</a>
+                </li>
+                <li><a href="snake.html">Snake</a>
+                </li>
+                <li><a href="triqui.html">Triqui</a></li>
+                <li><a href="adivina.html">Adivina</a>
+                <li><a href="conoceme.html">Conóceme</a>
+            </ul>
+        </nav>
+    </header>
+    <br><br><br><br><br><br><br>
+
+    <!--Triqui-->
+
+    <h1>Triqui</h1>
+    <br><br><br>
+    <div id="board">
+      <div data-index="1" class="tile right-border bottom-border"></div>
+      <div data-index="2" class="tile right-border bottom-border"></div>
+      <div data-index="3" class="tile bottom-border"></div>
+      <div data-index="4" class="tile right-border bottom-border"></div>
+      <div data-index="5" class="tile right-border bottom-border"></div>
+      <div data-index="6" class="tile bottom-border"></div>
+      <div data-index="7" class="tile right-border"></div>
+      <div data-index="8" class="tile right-border"></div>
+      <div data-index="9" class="tile"></div>
+      <div id="strike" class="strike"></div>
+    </div>
+    <div id="game-over-area" class="hidden">
+      <h2 id="game-over-text">El Ganador es X</h2>
+      <button id="play-again">Jugar de Nuevo</button>
+    </div>
+    <script src="triqui.js"></script>
+  </body>
+</html>

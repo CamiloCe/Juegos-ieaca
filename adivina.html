@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina qué es?</title>
+    <link rel="stylesheet" href="adivina.css">
+    <link rel="shortcut icon" href="Imagenes/cerebro.jpg" type="image/x-icon">, initial-scale=1.0">
+    
+</head>
+<body>
+    
+    <header>
+        <nav >
+            <ul class="menu-horizontal">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="banderas.html">Banderas</a>
+                </li>
+                <li><a href="snake.html">Snake</a>
+                </li>
+                <li><a href="triqui.html">Triqui</a></li>
+                <li><a href="adivina.html">Adivina</a></li>
+                <li><a href="conoceme.html">Conóceme</a>
+            </ul>
+        </nav>
+    </header>
+
+    <br><br><br><br><br><br><br><br>
+    <!--Adivina el elemento-->
+    <h1>ADIVINA ¿QUÉ ES?</h1>
+    <!-- Pantalla inicial -->
+    <div id="pantalla-inicial">
+        <p>Adivina adivinador</p>
+        <button class="btn" onclick="comenzarJuego()">COMENZAR A JUGAR</button>
+    </div>
+    <!-- Pantalla juego -->
+    <div class="pantalla-juego" id="pantalla-juego">
+        <img src="Imagenes/ga.png" alt="" id="imgBandera">
+        <div class="opciones">
+            <div class="opcion" id="op0" onclick="comprobarRespuesta(0)">
+                <div class="letra" id="l0">A</div>
+                <div class="nombre" id="n0">OPCION A</div>
+            </div>
+            <div class="opcion" id="op1" onclick="comprobarRespuesta(1)">
+                <div class="letra" id="l1">B</div>
+                <div class="nombre" id="n1">OPCION B</div>
+            </div>
+            <div class="opcion" id="op2" onclick="comprobarRespuesta(2)">
+                <div class="letra" id="l2">C</div>
+                <div class="nombre" id="n2">OPCION C</div>
+            </div>
+        </div>
+    </div>
+    <!-- Pantalla final -->
+    <div id="pantalla-final">
+        <h2>CORRECTAS: <span id="numCorrectas">3</span></h2>
+        <h2>INCORRECTAS: <span id="numIncorrectas">2</span></h2>
+        <button class="btn" onclick="volverAlInicio()">VOLVER AL INICIO</button>
+    </div>
+    <script src="adivina.js"></script>
+</body>
+</html>

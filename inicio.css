@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans';
+}
+
+/* Estilos para iPhone 12 */
+@media only screen
+  and (device-width: 390px)  /* Ancho de pantalla en modo vertical */
+  and (device-height: 844px) /* Alto de pantalla en modo vertical */
+  and (-webkit-device-pixel-ratio: 3) {
+
+  nav {
+    font-size: 20px;
+  }
+
+  .menu-horizontal > li {
+    margin-bottom: 8px;
+  }
+}
+
+@media only screen
+  and (device-width: 844px)  /* Ancho de pantalla en modo horizontal */
+  and (device-height: 390px) /* Alto de pantalla en modo horizontal */
+  and (-webkit-device-pixel-ratio: 3) {
+
+  nav {
+    font-size: 20px;
+  }
+
+  .menu-horizontal > li {
+    margin-bottom: 8px;
+  }
+}
+
+/* Estilos comunes */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 900;
+  height: 120px;
+  background-color: rgb(231, 10, 10);
+}
+
+nav {
+  max-width: 900px;
+  margin: auto;
+  margin-top: 40px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.menu-horizontal {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu-horizontal > li > a {
+  display: block;
+  padding: 10px 20px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.menu-horizontal > li:hover {
+  background-color: rgb(20, 8, 194);
+  border-radius: 30px;
+  transition: all 0.5s ease;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  #container {
+    position: fixed;
+    touch-action: none;
+  }
